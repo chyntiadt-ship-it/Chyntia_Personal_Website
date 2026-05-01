@@ -226,6 +226,13 @@
   margin-bottom: 24px;
 }
 
+.profile-popup h2 {
+  font-size: 2.2rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
 .contact-center {
   display: flex;
   justify-content: center;
