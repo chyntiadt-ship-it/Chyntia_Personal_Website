@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Website | Contact</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">Chyntia<span>.</span></a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="blog.html">Blog</a>
+      <a href="song.html">Song</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+
+    <button id="themeToggle" class="theme-btn">🌙</button>
+  </header>
+
+  <main class="page contact-center">
+  <section class="contact-info center">
+    <p class="eyebrow">Let’s Connect</p>
+    <h1>Contact Me</h1>
+    <p>
+      Tertarik untuk berkenalan, berkolaborasi, atau sekadar menyapa?
+      Silakan hubungi saya melalui kontak berikut.
+    </p>
+
+    <button class="contact-box contact-click" id="emailBox">
+      <span class="contact-icon">✉</span>
+      <div>
+        <p>Email</p>
+        <strong>chyntia.dt@gmail.com</strong>
+      </div>
+    </button>
+
+    <button class="contact-box contact-click" id="instagramBox">
+      <span class="contact-icon">◎</span>
+      <div>
+        <p>Instagram</p>
+        <strong>@chyntiadt</strong>
+      </div>
+    </button>
+
+    <button class="contact-box contact-click" id="whatsappBox">
+      <span class="contact-icon whatsapp-icon">☎</span>
+      <div>
+        <p>WhatsApp</p>
+        <strong>082353986821</strong>
+      </div>
+    </button>
+  </section>
+</main>
+
+  <!-- EMAIL POPUP -->
+  <div class="contact-popup" id="emailPopup">
+    <div class="contact-popup-box">
+      <button class="popup-close" data-close="emailPopup">×</button>
+
+      <p class="eyebrow">Send Email</p>
+      <h2>Kirim Email</h2>
+
+      <form
+        class="popup-form"
+        action="mailto:chyntia.dt@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <input type="text" name="name" placeholder="Nama kamu" required />
+        <input type="email" name="email" placeholder="Email kamu" required />
+        <textarea name="message" rows="6" placeholder="Pesan kamu" required></textarea>
+        <button type="submit">Send Email</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- INSTAGRAM POPUP -->
+  <div class="contact-popup" id="instagramPopup">
+    <div class="contact-popup-box profile-popup">
+      <button class="popup-close" data-close="instagramPopup">×</button>
+
+      <div class="profile-circle">IG</div>
+      <p class="eyebrow">Instagram Profile</p>
+      <h2>@chyntiadt</h2>
+      <p>Kunjungi profil Instagram saya untuk melihat aktivitas dan cerita saya.</p>
+
+      <a href="https://www.instagram.com/chyntiadt" target="_blank" class="popup-link">
+        Visit
+      </a>
+    </div>
+  </div>
+
+  <!-- WHATSAPP POPUP -->
+  <div class="contact-popup" id="whatsappPopup">
+    <div class="contact-popup-box profile-popup">
+      <button class="popup-close" data-close="whatsappPopup">×</button>
+
+      <div class="profile-circle wa">WA</div>
+      <p class="eyebrow">WhatsApp</p>
+      <h2>082353986821</h2>
+      <p>Klik tombol di bawah untuk langsung chat saya melalui WhatsApp.</p>
+
+      <a href="https://wa.me/6282353986821" target="_blank" class="popup-link">
+        Contact Me
+      </a>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+  <p>© 2026 Chyntia. All rights reserved.</p>
+</footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
