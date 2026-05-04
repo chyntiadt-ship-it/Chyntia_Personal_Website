@@ -169,9 +169,9 @@ p {
 
 .floating-whatsapp {
   position: fixed;
-  right: 28px;
-  top: 50%;
-  transform: translateY(-50%);
+
+  right: 24px;
+  bottom: 24px; /* ⬅️ ubah dari top ke bottom */
 
   width: 64px;
   height: 64px;
@@ -186,8 +186,7 @@ p {
   box-shadow: 0 18px 45px rgba(37, 211, 102, 0.45);
   z-index: 9999;
 
-  overflow: hidden;
-  transition: 0.25s ease;
+  cursor: grab;
 }
 
 .floating-whatsapp svg {
