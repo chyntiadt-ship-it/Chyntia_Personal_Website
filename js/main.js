@@ -202,7 +202,28 @@ const blogData = {
       { src: "OP/brook.jpg", title: "Brook" },
       { src: "OP/jinbe.jpg", title: "Jinbe" }
     ]
-  }
+  },
+
+  narnia: {
+  category: "Film",
+  title: "Narnia",
+  desc:
+    "Narnia memiliki 3 film, pertama pada tahun 2005, kedua pada tahun 2008, dan terakhir pada tahun 2010. Film ini menceritakan 4 orang saudara bernama Peter, Susan, Edmund, dan Lucy yang memasuki dunia fantasi dan bertemu banyak makhluk fantasi. Film ini adalah salah satu film sequel fantasi favorit saya sejak masih kecil, dan masih sering saya rewatch hingga sekarang. Jika ingin deskripsi lebih mengenai ketiga film, berikut linknya:",
+
+  site: "https://share.google/FFjALMxKqR0JEG8Uc",
+
+  images: [
+    { src: "narnia/n1.jpg", title: "Film 1" },
+    { src: "narnia/n2.jpg", title: "Film 2" },
+    { src: "narnia/n3.jpg", title: "Film 3" },
+    { src: "narnia/o1.jpg", title: "The Cast 1" },
+    { src: "narnia/o2.jpg", title: "The Cast 2" },
+    { src: "narnia/o3.jpg", title: "The Cast 3" },
+    { src: "narnia/f1.jpg", title: "Family 1" },
+    { src: "narnia/f2.jpg", title: "Family 2" },
+    { src: "narnia/f3.jpg", title: "Family 3" }
+  ]
+}
 };
 
 const readMoreButtons = document.querySelectorAll(".read-more-btn");
