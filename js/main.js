@@ -296,49 +296,55 @@ const songData = {
   multo: {
     title: "Multo",
     artist: "Cup of Joe",
-    youtube: "https://www.youtube.com/embed/Rht8rS4cR1s",
+    youtube: "https://youtu.be/Rht8rS4cR1s?si=9ocZmMzxYPpKUqtV",
     audio: "music/multo.mp3",
-    about: "Lagu ini menggambarkan perasaan yang masih dihantui oleh seseorang dari masa lalu."
+    about:
+      "Lagu ini menggambarkan perasaan yang masih dihantui oleh seseorang dari masa lalu. Secara umum, maknanya tentang kenangan yang sulit dilupakan dan rasa kehilangan yang terus terasa."
   },
 
   numberonegirl: {
     title: "Number One Girl",
     artist: "ROSÉ",
-    youtube: "https://www.youtube.com/embed/pZ1NdE69VTs",
+    youtube: "https://youtu.be/pZ1NdE69VTs?si=Je5xgalLGlg7a_3Y",
     audio: "music/number-one-girl.mp3",
-    about: "Lagu ini bercerita tentang keinginan untuk dicintai, dipilih, dan dianggap berharga oleh seseorang."
+    about:
+      "Lagu ini bercerita tentang keinginan untuk dicintai, dipilih, dan dianggap berharga oleh seseorang. Maknanya dekat dengan rasa insecure, harapan, dan kebutuhan akan validasi."
   },
 
   drunktext: {
     title: "Drunk Text",
     artist: "Henry Moodie",
-    youtube: "https://www.youtube.com/embed/OqEc_169ywY",
+    youtube: "https://youtu.be/OqEc_169ywY?si=RR8nIPoYFMbbaggF",
     audio: "music/drunk-text.mp3",
-    about: "Lagu ini menggambarkan perasaan ingin menghubungi seseorang saat emosi sedang tidak stabil."
+    about:
+      "Lagu ini menggambarkan perasaan ingin menghubungi seseorang saat emosi sedang tidak stabil. Secara umum, lagu ini tentang rindu, penyesalan, dan kata-kata yang sulit diungkapkan secara sadar."
   },
 
   imissyouimsorry: {
     title: "I Miss You, I’m Sorry",
     artist: "Gracie Abrams",
-    youtube: "https://www.youtube.com/embed/nijx6Np0o40",
+    youtube: "https://youtu.be/nijx6Np0o40?si=Z-rbuNvgfm6me8kJ",
     audio: "music/i-miss-you-im-sorry.mp3",
-    about: "Lagu ini menceritakan hubungan yang rumit, rasa rindu, dan penyesalan."
+    about:
+      "Lagu ini menceritakan hubungan yang rumit, rasa rindu, dan penyesalan setelah kehilangan seseorang. Maknanya tentang konflik antara masih sayang dan sadar bahwa semuanya sudah berubah."
   },
 
   control: {
     title: "Control",
     artist: "Zoe Wees",
-    youtube: "https://www.youtube.com/embed/UrGS_6_HglU",
+    youtube: "https://youtu.be/UrGS_6_HglU?si=H_nUo5p8dCfKLnwT",
     audio: "music/control.mp3",
-    about: "Lagu ini memiliki makna tentang perjuangan melawan rasa takut, cemas, dan kehilangan kendali."
+    about:
+      "Lagu ini memiliki makna tentang perjuangan melawan rasa takut, cemas, dan kehilangan kendali. Secara umum, lagu ini menyampaikan kekuatan untuk bertahan meskipun sedang berada di masa sulit."
   },
 
   carsoutside: {
     title: "Cars Outside",
     artist: "James Arthur",
-    youtube: "https://www.youtube.com/embed/v27COkZT4GY",
+    youtube: "https://youtu.be/v27COkZT4GY?si=jO7cerCC4Vamx-N5",
     audio: "music/cars-outside.mp3",
-    about: "Lagu ini menggambarkan rasa berat ketika harus pergi meninggalkan orang yang dicintai."
+    about:
+      "Lagu ini menggambarkan rasa berat ketika harus pergi meninggalkan orang yang dicintai. Maknanya tentang kerinduan, hubungan jarak jauh, dan keinginan untuk tetap tinggal bersama seseorang."
   }
 };
 
@@ -590,5 +596,30 @@ if (floatingWhatsapp) {
   floatingWhatsapp.addEventListener("click", (event) => {
     event.preventDefault();
     window.location.href = "contact.html";
+  });
+}
+
+const wa = document.querySelector(".floating-whatsapp");
+
+if (wa) {
+  let isDragging = false;
+
+  wa.addEventListener("mousedown", () => {
+    isDragging = true;
+    wa.style.cursor = "grabbing";
+  });
+
+  document.addEventListener("mouseup", () => {
+    isDragging = false;
+    wa.style.cursor = "grab";
+  });
+
+  document.addEventListener("mousemove", (e) => {
+    if (!isDragging) return;
+
+    wa.style.left = e.clientX - 30 + "px";
+    wa.style.top = e.clientY - 30 + "px";
+    wa.style.right = "auto";
+    wa.style.bottom = "auto";
   });
 }
