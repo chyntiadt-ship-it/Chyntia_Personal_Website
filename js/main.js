@@ -322,6 +322,14 @@ const songData = {
     about: "Lagu ini menggambarkan perasaan yang masih dihantui oleh seseorang dari masa lalu."
   },
 
+  multostrippeddown: {
+    title: "Multo (Stripped Down)",
+    artist: "Cup of Joe",
+    youtube: "https://www.youtube.com/embed/7bd1X3ZYimI",
+    audio: "music/multos.mp3",
+    about: "Lagu ini menggambarkan tentang kerinduan dan sulit melupakan seseorang yang pernah berarti, dengan nuansa tenang dan emosional."
+  },
+
   numberonegirl: {
     title: "Number One Girl",
     artist: "ROSÉ",
@@ -360,6 +368,22 @@ const songData = {
     youtube: "https://www.youtube.com/embed/v27COkZT4GY",
     audio: "music/cars-outside.mp3",
     about: "Lagu ini menggambarkan rasa berat ketika harus pergi meninggalkan orang yang dicintai."
+  },
+
+  tattoo: {
+    title: "Tattoo",
+    artist: "Loreen",
+    youtube: "https://www.youtube.com/embed/PcCD9n0ZYew",
+    audio: "music/tattoo.mp3",
+    about: "Lagu ini menggambarkan perasaan sedih dan kehilangan seseorang yang sangat berarti, serta perjuangan untuk menerima kenyataan dan move on dari kenangan yang masih tersisa."
+  },
+
+  thisisme: {
+    title: "This Is Me",
+    artist: "The Greatest Showman",
+    youtube: "https://www.youtube.com/embed/CjxugyZCfuw",
+    audio: "music/thisisme.mp3",
+    about: "Lagu ini menceritakan tentang keberanian untuk menerima diri sendiri, bangga dengan siapa diri kita, dan tidak takut menghadapi penilaian orang lain."
   }
 };
 
