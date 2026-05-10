@@ -422,3 +422,21 @@
     flex-shrink: 0;
   }
 }
+
+.contact-icon img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  display: block;
+}
+
+.choice-card .contact-icon img {
+  width: 34px;
+  height: 34px;
+}
+
+.profile-circle img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
