@@ -251,3 +251,34 @@
     display: flex;
   }
 }
+
+.song-slider,
+.gallery-slider {
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 18px;
+}
+
+.song-card,
+.gallery-card {
+  flex: 0 0 360px;
+  scroll-snap-align: start;
+}
+
+@media (max-width: 768px) {
+  .song-slider,
+  .gallery-slider {
+    gap: 18px;
+    scroll-behavior: auto;
+  }
+
+  .song-card,
+  .gallery-card {
+    flex: 0 0 82vw;
+  }
+}
