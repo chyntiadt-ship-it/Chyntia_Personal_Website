@@ -235,3 +235,190 @@
     letter-spacing: 0.02em;
   }
 }
+
+/* PILIHAN DATA DIRI DAN CONTACT */
+.contact-choice {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.choice-card {
+  border: 1px solid var(--border);
+  background: var(--surface);
+
+  width: 100%;
+  min-height: 280px;
+
+  border-radius: 36px;
+  padding: 60px 40px;
+
+  box-shadow: var(--shadow);
+
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--text);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.3s ease;
+}
+
+.choice-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary);
+}
+
+.choice-card .contact-icon {
+  width: 78px;
+  height: 78px;
+  font-size: 2rem;
+
+  margin: 0 auto 28px;
+}
+
+.choice-card h2 {
+  font-size: 2.4rem;
+  color: var(--text);
+}
+
+.contact-choice {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+
+  gap: 40px;
+
+  margin-top: 40px;
+}
+
+.data-detail,
+.contact-detail {
+  width: 100%;
+  max-width: 620px;
+  margin: 30px auto 0;
+  padding: 30px;
+  border-radius: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  text-align: left;
+  animation: contactFade 0.35s ease;
+}
+
+.data-detail h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: -10px;
+  margin-bottom: 28px;
+  color: var(--primary);
+}
+
+.data-detail p {
+  background: rgba(185, 137, 91, 0.10);
+  padding: 14px 18px;
+  border-radius: 16px;
+  margin-bottom: 14px;
+  color: var(--text);
+  font-size: 1.05rem;
+  transition: 0.25s ease;
+}
+
+.data-detail p:hover {
+  background: rgba(185, 137, 91, 0.18);
+  transform: translateX(6px);
+}
+
+.data-detail strong {
+  color: var(--primary);
+}
+
+.contact-detail .contact-box {
+  max-width: 100%;
+}
+
+.back-choice {
+  border: none;
+  background: var(--primary);
+  color: white;
+  padding: 11px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  margin-bottom: 22px;
+  transition: 0.25s ease;
+}
+
+.back-choice:hover {
+  background: var(--primary-dark);
+  transform: translateY(-3px);
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes contactFade {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 620px) {
+  .contact-choice {
+    grid-template-columns: 1fr;
+  }
+
+  .choice-card {
+    padding: 34px 22px;
+  }
+
+  .data-detail,
+  .contact-detail {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  .contact-box {
+    max-width: 100%;
+    padding: 18px;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .contact-box div {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .contact-box strong {
+    display: block;
+    font-size: 0.92rem;
+    line-height: 1.5;
+
+    /* supaya pecahnya lebih natural */
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+  .contact-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+}
