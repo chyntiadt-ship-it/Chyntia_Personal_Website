@@ -552,6 +552,41 @@ if (
 }
 
 /* CONTACT PAGE */
+const contactChoice = document.getElementById("contactChoice");
+const dataDiriChoice = document.getElementById("dataDiriChoice");
+const contactChoiceBtn = document.getElementById("contactChoiceBtn");
+const dataDiriDetail = document.getElementById("dataDiriDetail");
+const contactDetail = document.getElementById("contactDetail");
+const backFromData = document.getElementById("backFromData");
+const backFromContact = document.getElementById("backFromContact");
+
+if (dataDiriChoice && contactChoice && dataDiriDetail) {
+  dataDiriChoice.addEventListener("click", () => {
+    contactChoice.classList.add("hidden");
+    dataDiriDetail.classList.remove("hidden");
+  });
+}
+
+if (contactChoiceBtn && contactChoice && contactDetail) {
+  contactChoiceBtn.addEventListener("click", () => {
+    contactChoice.classList.add("hidden");
+    contactDetail.classList.remove("hidden");
+  });
+}
+
+if (backFromData && contactChoice && dataDiriDetail) {
+  backFromData.addEventListener("click", () => {
+    dataDiriDetail.classList.add("hidden");
+    contactChoice.classList.remove("hidden");
+  });
+}
+
+if (backFromContact && contactChoice && contactDetail) {
+  backFromContact.addEventListener("click", () => {
+    contactDetail.classList.add("hidden");
+    contactChoice.classList.remove("hidden");
+  });
+}
 const emailBox = document.getElementById("emailBox");
 const instagramBox = document.getElementById("instagramBox");
 const whatsappBox = document.getElementById("whatsappBox");
