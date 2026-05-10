@@ -6,6 +6,7 @@
   <title>Personal Website | Contact</title>
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
   <header class="navbar">
@@ -24,36 +25,70 @@
 
   <main class="page contact-center">
   <section class="contact-info center">
-    <p class="eyebrow">Let’s Connect</p>
     <h1>Contact Me</h1>
-    <p>
-      Tertarik untuk berkenalan, berkolaborasi, atau sekadar menyapa?
-      Silakan hubungi saya melalui kontak berikut.
-    </p>
 
-    <button class="contact-box contact-click" id="emailBox">
-      <span class="contact-icon">✉</span>
-      <div>
-        <p>Email</p>
-        <strong>chyntia.dt@gmail.com</strong>
-      </div>
-    </button>
+    <div class="contact-choice" id="contactChoice">
+      <button class="choice-card" id="dataDiriChoice">
+        <span class="contact-icon">
+          <i class="fa-solid fa-user"></i>
+        </span>
+        <h2>Data Diri</h2>
+      </button>
 
-    <button class="contact-box contact-click" id="instagramBox">
-      <span class="contact-icon">◎</span>
-      <div>
-        <p>Instagram</p>
-        <strong>@chyntiadt</strong>
-      </div>
-    </button>
+      <button class="choice-card" id="contactChoiceBtn">
+        <span class="contact-icon">
+          <i class="fa-solid fa-address-book"></i>
+        </span>
+        <h2>Contact</h2>
+      </button>
+    </div>
 
-    <button class="contact-box contact-click" id="whatsappBox">
-      <span class="contact-icon whatsapp-icon">☎</span>
-      <div>
-        <p>WhatsApp</p>
-        <strong>082353986821</strong>
-      </div>
-    </button>
+    <div class="data-detail hidden" id="dataDiriDetail">
+      <button class="back-choice" id="backFromData">Kembali</button>
+
+      <h2>Data Diri</h2>
+
+      <p><strong>Nama:</strong> Chyntia Tomasoa</p>
+      <p><strong>NIM:</strong> 240211060027</p>
+      <p><strong>Prodi:</strong> Teknik Informatika</p>
+      <p><strong>Jurusan:</strong> Teknik Elektro</p>
+      <p><strong>Fakultas:</strong> Teknik</p>
+      <p><strong>Universitas:</strong> Sam Ratulangi Manado</p>
+    </div>
+
+    <div class="contact-detail hidden" id="contactDetail">
+      <button class="back-choice" id="backFromContact">Kembali</button>
+
+      <button class="contact-box contact-click" id="emailBox">
+        <span class="contact-icon gmail-icon">
+          <i class="fa-solid fa-envelope"></i>
+        </span>
+        <div>
+          <p>Email</p>
+          <strong>chyntia.dt@gmail.com</strong>
+        </div>
+      </button>
+
+      <button class="contact-box contact-click" id="instagramBox">
+        <span class="contact-icon instagram-icon">
+          <i class="fa-brands fa-instagram"></i>
+        </span>
+        <div>
+          <p>Instagram</p>
+          <strong>@chyntiadt</strong>
+        </div>
+      </button>
+
+      <button class="contact-box contact-click" id="whatsappBox">
+        <span class="contact-icon whatsapp-icon">
+          <i class="fa-brands fa-whatsapp"></i>
+        </span>
+        <div>
+          <p>WhatsApp</p>
+          <strong>082353986821</strong>
+        </div>
+      </button>
+    </div>
   </section>
 </main>
 
